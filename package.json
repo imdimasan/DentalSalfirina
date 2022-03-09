@@ -6,14 +6,34 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "mock": "json-server -w db.json -p 3600",
+    "serve": "concurrently \"npm run dev\" \"npm run mock\" "
   },
   "dependencies": {
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.9.1",
+    "@types/react": "^17.0.21",
+    "@types/react-dom": "^17.0.9",
+    "@types/react-lottie": "^1.2.6",
+    "@types/react-transition-group": "^4.4.3",
+    "axios": "^0.21.4",
+    "concurrently": "^6.2.1",
+    "dotenv": "^10.0.0",
+    "formik": "^2.2.9",
+    "lottie-web": "^5.7.13",
     "next": "11.1.2",
+    "next-themes": "^0.0.15",
+    "node-sass": "^5.0.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-transition-group": "^4.4.2",
+    "swiper": "^7.0.8",
+    "typescript": "^4.4.3",
+    "yup": "^0.32.9"
   },
   "devDependencies": {
+    "@svgr/webpack": "^5.5.0",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2"
   }
